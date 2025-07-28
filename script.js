@@ -15,6 +15,7 @@ const words = [
   const wpm = document.getElementById('wpm');
   const accuracy = document.getElementById('accuracy');
   const startBtn = document.getElementById('startBtn');
+  const progressBar = document.getElementById('progress');
   
   function getRandomWord() {
     return words[Math.floor(Math.random() * words.length)];
@@ -34,11 +35,14 @@ const words = [
     timer.innerText = `Time: ${timeLeft}s`;
     wpm.innerText = `WPM: 0`;
     accuracy.innerText = `Accuracy: 100%`;
+    progressBar.style.width = '100%';
   
     clearInterval(interval);
     interval = setInterval(() => {
       timeLeft--;
       timer.innerText = `Time: ${timeLeft}s`;
+      const progressWidth = (timeLeft / 60) * 100;
+      progressBar.style.width = `${progressWidth}%`;
   
       if (timeLeft <= 0) {
         clearInterval(interval);
@@ -61,8 +65,13 @@ const words = [
         score++;
       }
   
-      currentWord = getRandomWord();
-      wordDisplay.innerText = currentWord;
+      wordDisplay.classList.add('fade');
+      setTimeout(() => {
+        currentWord = getRandomWord();
+        wordDisplay.innerText = currentWord;
+        wordDisplay.classList.remove('fade');
+      }, 200);
+  
       wordInput.value = '';
   
       const minutes = (60 - timeLeft) / 60;
