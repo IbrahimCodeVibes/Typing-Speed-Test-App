@@ -4,7 +4,7 @@ A beautiful and animated typing speed test app made with pure HTML, CSS and Java
 
 ## 🌟 Features
 
-- 🧠 Random sentences to type
+- 🧠 Random words to type
 - ⏱️ Live timer
 - 📈 Real-time WPM and accuracy tracking
 - 💡 Clean, colorful, and responsive design
