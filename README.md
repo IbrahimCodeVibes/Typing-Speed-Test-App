@@ -4,11 +4,13 @@ A beautiful and animated typing speed test app made with pure HTML, CSS and Java
 
 ## 🌟 Features
 
-- 🧠 Random words to type
-- ⏱️ Live timer
-- 📈 Real-time WPM and accuracy tracking
-- 💡 Clean, colorful, and responsive design
-- 🎯 Perfect for practice or fun challenges
+- 🔤 One word at a time typing test (like Monkeytype)
+- ⏱️ 60-second countdown timer
+- 📊 Live WPM (Words Per Minute) and Accuracy tracking
+- 💡 Animated word transitions (smooth fade & scale)
+- 📉 Animated progress bar showing time left
+- 🧠 Random word generation from a curated word list
+- 🎨 Stylish, responsive and modern UI
 
 
 ## 📦 How to Use
