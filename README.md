@@ -28,3 +28,4 @@ A beautiful and animated typing speed test app made with pure HTML, CSS and Java
 ---
 
 Made with ❤️ by a dev who's leveling up daily!
+## Follow Me On IG !
